@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:3000
+
+### Pesquisa todos os books
+GET {{baseUrl}}/api/books
+
+### Cria um novo book
+POST {{baseUrl}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Agronomia",
+  "description": "Curso Superior de Agronomia",
+  "pageCount": 520,
+  "publishDate": "2010-01-01"
+}
+
+
+### Pesquisa book específico
+GET {{baseUrl}}/api/books/6747afa680d6117e0ecdbf79
+
+### Altera o book com id=1
+PUT {{baseUrl}}/api/books/6747afa680d6117e0ecdbf79
+Content-Type: application/json
+
+{
+  "title": "ALTERA PORRA"
+}
+
+### Exclui um book 
+DELETE {{baseUrl}}/api/books/6747afa580d6117e0ecdbf77
