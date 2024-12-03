@@ -8,23 +8,23 @@ POST {{baseUrl}}/api/books
 Content-Type: application/json
 
 {
-  "title": "Agronomia",
-  "description": "Curso Superior de Agronomia",
+  "title": "Clean Code",
+  "description": "Livro para programadores sobre código limpo.",
   "pageCount": 520,
   "publishDate": "2010-01-01"
 }
 
 
 ### Pesquisa book específico
-GET {{baseUrl}}/api/books/6747afa680d6117e0ecdbf79
+GET {{baseUrl}}/api/books/674e53f2968dc4a7c071c971
 
 ### Altera o book com id=1
-PUT {{baseUrl}}/api/books/6747afa680d6117e0ecdbf79
+PUT {{baseUrl}}/api/books/674e53a710b7c1ccba8fe5f1
 Content-Type: application/json
 
 {
-  "title": "ALTERA PORRA"
+  "title": "Teste new title"
 }
 
 ### Exclui um book 
-DELETE {{baseUrl}}/api/books/6747afa580d6117e0ecdbf77
+DELETE {{baseUrl}}/api/books/674e527d704e130c154b4fc8
